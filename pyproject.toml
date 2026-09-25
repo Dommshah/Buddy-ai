@@ -1,0 +1,42 @@
+[project]
+name = "buddy-ai"
+version = "2.1.0"
+description = "Buddy.ai — Vibrant autonomous AI assistant with reasoning, learning, security, voice, and 49+ tools"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Private use only" }
+keywords = ["ai", "agent", "buddy", "assistant", "llm", "gemini", "ollama"]
+authors = [{ name = "Buddy.ai" }]
+dependencies = [
+    "google-genai>=2.0.0",
+    "httpx>=0.27.0",
+    "rich>=13.9.0",
+    "prompt_toolkit>=3.0.0",
+    "pydantic>=2.9.0",
+    "python-dotenv>=1.0.1",
+    "openai>=1.0.0",
+]
+
+[project.optional-dependencies]
+voice = ["pyttsx3>=2.90", "SpeechRecognition>=3.10.0", "gTTS>=2.5.0", "edge-tts>=6.1.0"]
+audio = ["soundfile>=0.12.0", "praat-parselmouth>=0.4.3", "pyworld>=0.3.4"]
+ml = ["torch>=2.0.0", "torchaudio>=2.0.0", "faiss-cpu>=1.7.4", "numpy>=1.24.0"]
+full = ["pyttsx3>=2.90", "SpeechRecognition>=3.10.0", "gTTS>=2.5.0", "edge-tts>=6.1.0", "soundfile>=0.12.0", "torch>=2.0.0", "numpy>=1.24.0"]
+dev = ["pytest>=7.0", "ruff>=0.1.0"]
+
+[project.scripts]
+buddy = "cli:main"
+Buddy = "cli:main"
+agent = "cli:main"
+
+[project.urls]
+Homepage = "https://github.com/buddy-ai/buddy"
+Repository = "https://github.com/buddy-ai/buddy"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"

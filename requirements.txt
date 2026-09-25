@@ -1,0 +1,37 @@
+# Buddy.ai — Dependencies (2026 Compatible)
+# ================================================
+
+# Core LLM Integration (Google Gemini - New API)
+google-genai>=2.0.0
+
+# HTTP Client (for web fetching)
+httpx>=0.27.0
+
+# CLI & Rich Output
+rich>=13.9.0
+
+# Enhanced Terminal Input (arrow keys, history, editing)
+prompt_toolkit>=3.0.0
+
+# Data Validation
+pydantic>=2.9.0
+
+# Environment Variables
+python-dotenv>=1.0.1
+
+# Voice (Text-to-Speech & Speech Recognition)
+pyttsx3>=2.90
+SpeechRecognition>=3.10.0
+gTTS>=2.5.0
+edge-tts>=6.1.0
+
+# Audio Processing
+soundfile>=0.12.0
+praat-parselmouth>=0.4.3
+pyworld>=0.3.4
+
+# Machine Learning (for RVC voice conversion)
+torch>=2.0.0
+torchaudio>=2.0.0
+faiss-cpu>=1.7.4
+numpy>=1.24.0

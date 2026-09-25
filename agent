@@ -1,0 +1,4 @@
+#!/bin/bash
+# Buddy.ai v2.1 Quick Launcher — vibrant CLI with kaka design system
+cd "/home/sgdruva/Documents/Default Project/ai-agent"
+exec ./venv/bin/python cli.py "$@"

@@ -1,0 +1,720 @@
+{
+  "timestamp": "2026-09-11T15:08:37.780594",
+  "total_scenarios": 55,
+  "passed": 53,
+  "failed": 1,
+  "warnings": 1,
+  "assertions": {
+    "total": 83,
+    "passed": 77
+  },
+  "total_duration_ms": 4609.18552599378,
+  "tool_count": 49,
+  "overall_score": 100.0,
+  "scenarios": [
+    {
+      "name": "Tool Registry Initialization",
+      "category": "system",
+      "status": "pass",
+      "duration_ms": 2532.9846550002912,
+      "assertions": "1/1",
+      "metrics": {
+        "tool_count": 49,
+        "tool_names": [
+          "read_file",
+          "write_file",
+          "list_files",
+          "search_files",
+          "run_command",
+          "system_info",
+          "fetch_url",
+          "get_datetime",
+          "save_memory",
+          "recall_memory",
+          "run_python",
+          "json_query",
+          "calculate",
+          "clipboard",
+          "autonomous_reason",
+          "reason",
+          "verify",
+          "security_audit",
+          "code_analyze",
+          "code_generate",
+          "content_create",
+          "creative_idea",
+          "creative_prompt",
+          "pattern_detect",
+          "predict",
+          "voice_speak",
+          "voice_listen",
+          "voice_transcribe",
+          "voice_engines",
+          "agent_spawn",
+          "agent_delegate",
+          "agent_status",
+          "deep_research",
+          "browse_page",
+          "web_search",
+          "learn_store",
+          "learn_recall",
+          "knowledge_query",
+          "knowledge_store",
+          "autonomy_plan",
+          "autonomy_decide",
+          "analyze_csv",
+          "json_stats",
+          "convert_format",
+          "platform_adapter",
+          "ponytail_set_mode",
+          "ponytail_review",
+          "ponytail_audit",
+          "ponytail_rules"
+        ]
+      }
+    },
+    {
+      "name": "Chain-of-Thought Reasoning",
+      "category": "reasoning",
+      "status": "pass",
+      "duration_ms": 0.2800699994622846,
+      "assertions": "2/2",
+      "metrics": {
+        "steps": 1,
+        "confidence": 0.9,
+        "assumptions": 1
+      }
+    },
+    {
+      "name": "Tree-of-Thought Reasoning",
+      "category": "reasoning",
+      "status": "pass",
+      "duration_ms": 0.06259600013436284,
+      "assertions": "2/2",
+      "metrics": {
+        "branches": 3,
+        "confidence": 0.7
+      }
+    },
+    {
+      "name": "Deductive Reasoning",
+      "category": "reasoning",
+      "status": "pass",
+      "duration_ms": 0.03292199926363537,
+      "assertions": "2/2",
+      "metrics": {
+        "premises": 2,
+        "confidence": 0.8
+      }
+    },
+    {
+      "name": "Critical Analysis",
+      "category": "reasoning",
+      "status": "pass",
+      "duration_ms": 0.09824399967328645,
+      "assertions": "1/1",
+      "metrics": {
+        "supporting": 2,
+        "counter": 2,
+        "confidence": 0.7
+      }
+    },
+    {
+      "name": "Abductive Reasoning (Root Cause)",
+      "category": "reasoning",
+      "status": "pass",
+      "duration_ms": 0.11201199959032238,
+      "assertions": "1/1",
+      "metrics": {
+        "explanations_tested": 4,
+        "confidence": 0.3
+      }
+    },
+    {
+      "name": "Analogical Reasoning",
+      "category": "reasoning",
+      "status": "pass",
+      "duration_ms": 0.03892699987773085,
+      "assertions": "1/1",
+      "metrics": {
+        "mappings": 4,
+        "confidence": 0.65
+      }
+    },
+    {
+      "name": "Pattern Storage",
+      "category": "learning",
+      "status": "pass",
+      "duration_ms": 8.440982999672997,
+      "assertions": "2/2",
+      "metrics": {
+        "patterns_stored": 3
+      }
+    },
+    {
+      "name": "Pattern Recall",
+      "category": "learning",
+      "status": "pass",
+      "duration_ms": 0.18259100033901632,
+      "assertions": "1/1",
+      "metrics": {
+        "found": 3
+      }
+    },
+    {
+      "name": "Knowledge Storage & Query",
+      "category": "learning",
+      "status": "pass",
+      "duration_ms": 6.700783999804116,
+      "assertions": "2/2",
+      "metrics": {
+        "facts_found": 2
+      }
+    },
+    {
+      "name": "Learning Statistics",
+      "category": "learning",
+      "status": "pass",
+      "duration_ms": 0.04500799968809588,
+      "assertions": "1/1",
+      "metrics": {
+        "total_interactions": 0,
+        "patterns_stored": 3,
+        "knowledge_facts": 3,
+        "skill_levels": {},
+        "task_distribution": {},
+        "most_common_tasks": []
+      }
+    },
+    {
+      "name": "LLM Context Generation",
+      "category": "learning",
+      "status": "pass",
+      "duration_ms": 0.04560499928629724,
+      "assertions": "1/1",
+      "metrics": {
+        "context_length": 129
+      }
+    },
+    {
+      "name": "Vulnerability Scan (Multi-category)",
+      "category": "security",
+      "status": "pass",
+      "duration_ms": 5.793125000309374,
+      "assertions": "3/3",
+      "metrics": {
+        "score": 100,
+        "vulns": 7,
+        "by_severity": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0,
+          "info": 0
+        }
+      }
+    },
+    {
+      "name": "Hardcoded Secret Detection",
+      "category": "security",
+      "status": "pass",
+      "duration_ms": 8.773022000241326,
+      "assertions": "1/1",
+      "metrics": {
+        "secrets_found": 1
+      }
+    },
+    {
+      "name": "Clean Code Verification",
+      "category": "security",
+      "status": "pass",
+      "duration_ms": 0.5643579997922643,
+      "assertions": "1/1",
+      "metrics": {
+        "score": 100,
+        "vulns": 0
+      }
+    },
+    {
+      "name": "Audit Report Generation",
+      "category": "security",
+      "status": "pass",
+      "duration_ms": 0.06941299943719059,
+      "assertions": "1/1",
+      "metrics": {
+        "report_length": 551
+      }
+    },
+    {
+      "name": "Python Code Analysis",
+      "category": "code_analysis",
+      "status": "pass",
+      "duration_ms": 3.9286589999392163,
+      "assertions": "4/4",
+      "metrics": {
+        "loc": 19,
+        "functions": 3,
+        "classes": 1,
+        "complexity": 6.0,
+        "maintainability": 78.33333333333333
+      }
+    },
+    {
+      "name": "JavaScript Code Analysis",
+      "category": "code_analysis",
+      "status": "pass",
+      "duration_ms": 1.2419999993653619,
+      "assertions": "1/1",
+      "metrics": {
+        "issues": 4,
+        "functions": 1
+      }
+    },
+    {
+      "name": "Code Generation + Tests",
+      "category": "code_analysis",
+      "status": "pass",
+      "duration_ms": 0.016771999980846886,
+      "assertions": "2/2",
+      "metrics": {
+        "function_size": 192,
+        "test_size": 420
+      }
+    },
+    {
+      "name": "Blog Post Generation",
+      "category": "content",
+      "status": "pass",
+      "duration_ms": 0.029696000638068654,
+      "assertions": "2/2",
+      "metrics": {
+        "prompt_length": 358
+      }
+    },
+    {
+      "name": "Email Sequence Generation",
+      "category": "content",
+      "status": "pass",
+      "duration_ms": 0.01933799921971513,
+      "assertions": "1/1",
+      "metrics": {
+        "prompt_length": 282
+      }
+    },
+    {
+      "name": "Content Template Library",
+      "category": "content",
+      "status": "pass",
+      "duration_ms": 0.016834999769343995,
+      "assertions": "1/1",
+      "metrics": {
+        "template_count": 10
+      }
+    },
+    {
+      "name": "Multi-Channel Content Plan",
+      "category": "content",
+      "status": "pass",
+      "duration_ms": 0.016142000276886392,
+      "assertions": "1/1",
+      "metrics": {
+        "channels": 4
+      }
+    },
+    {
+      "name": "Divergent Brainstorming",
+      "category": "creativity",
+      "status": "pass",
+      "duration_ms": 0.13815700003760867,
+      "assertions": "2/2",
+      "metrics": {
+        "ideas_generated": 8,
+        "avg_score": 0.6977614847439059
+      }
+    },
+    {
+      "name": "SCAMPER Framework",
+      "category": "creativity",
+      "status": "pass",
+      "duration_ms": 0.09423800020158524,
+      "assertions": "1/1",
+      "metrics": {
+        "ideas": 7
+      }
+    },
+    {
+      "name": "Creative Writing Prompt",
+      "category": "creativity",
+      "status": "pass",
+      "duration_ms": 0.019027000234927982,
+      "assertions": "1/1",
+      "metrics": {
+        "prompt_length": 280
+      }
+    },
+    {
+      "name": "Innovation Framework",
+      "category": "creativity",
+      "status": "pass",
+      "duration_ms": 0.007787999493302777,
+      "assertions": "2/2",
+      "metrics": {
+        "frameworks": 4
+      }
+    },
+    {
+      "name": "Idea Selection Matrix",
+      "category": "creativity",
+      "status": "pass",
+      "duration_ms": 0.07725999967078678,
+      "assertions": "1/1",
+      "metrics": {
+        "ranked": 7
+      }
+    },
+    {
+      "name": "Text Pattern Detection",
+      "category": "patterns",
+      "status": "pass",
+      "duration_ms": 0.5370469998524641,
+      "assertions": "2/2",
+      "metrics": {
+        "patterns": 4,
+        "types": [
+          "simple_syntax",
+          "key_topics",
+          "sentiment_positive",
+          "repetition"
+        ]
+      }
+    },
+    {
+      "name": "Numerical Trend Detection",
+      "category": "patterns",
+      "status": "pass",
+      "duration_ms": 0.1039950002450496,
+      "assertions": "2/2",
+      "metrics": {
+        "patterns": 3,
+        "types": [
+          "monotonic_increase",
+          "trend",
+          "auto_correlation"
+        ]
+      }
+    },
+    {
+      "name": "Volatile Data Pattern Detection",
+      "category": "patterns",
+      "status": "pass",
+      "duration_ms": 0.07618699964950792,
+      "assertions": "1/1",
+      "metrics": {
+        "patterns": 2
+      }
+    },
+    {
+      "name": "Linear Prediction",
+      "category": "prediction",
+      "status": "pass",
+      "duration_ms": 0.05858300028194208,
+      "assertions": "2/2",
+      "metrics": {
+        "predicted": 260.0,
+        "confidence": 0.95
+      }
+    },
+    {
+      "name": "Moving Average Prediction",
+      "category": "prediction",
+      "status": "pass",
+      "duration_ms": 0.021019999621785246,
+      "assertions": "1/1",
+      "metrics": {
+        "predicted": 206.6667,
+        "confidence": 0.7000000000000001
+      }
+    },
+    {
+      "name": "Trend Classification",
+      "category": "prediction",
+      "status": "pass",
+      "duration_ms": 0.013785000192001462,
+      "assertions": "1/1",
+      "metrics": {
+        "trend": "strong_uptrend"
+      }
+    },
+    {
+      "name": "Volatility Estimation",
+      "category": "prediction",
+      "status": "pass",
+      "duration_ms": 0.013238999599707313,
+      "assertions": "1/1",
+      "metrics": {
+        "volatility": 0.22771001702132443
+      }
+    },
+    {
+      "name": "Claim Verification (Supported)",
+      "category": "verification",
+      "status": "pass",
+      "duration_ms": 0.8992820003186353,
+      "assertions": "1/1",
+      "metrics": {
+        "confidence": 0.8925,
+        "verified": true
+      }
+    },
+    {
+      "name": "Code Output Verification",
+      "category": "verification",
+      "status": "pass",
+      "duration_ms": 0.12867999976151623,
+      "assertions": "1/1",
+      "metrics": {
+        "confidence": 0.99
+      }
+    },
+    {
+      "name": "Cross-Reference Consistency",
+      "category": "verification",
+      "status": "pass",
+      "duration_ms": 0.149059999785095,
+      "assertions": "1/1",
+      "metrics": {
+        "score": 0.0,
+        "pairs": 3
+      }
+    },
+    {
+      "name": "Data Integrity Validation",
+      "category": "verification",
+      "status": "pass",
+      "duration_ms": 0.09746599971549585,
+      "assertions": "1/1",
+      "metrics": {
+        "confidence": 0.8
+      }
+    },
+    {
+      "name": "Autonomous Plan Creation",
+      "category": "autonomy",
+      "status": "pass",
+      "duration_ms": 0.19825900017167442,
+      "assertions": "2/2",
+      "metrics": {
+        "tasks": 6,
+        "plan_id": "ad8b7338"
+      }
+    },
+    {
+      "name": "Task Execution Flow",
+      "category": "autonomy",
+      "status": "pass",
+      "duration_ms": 0.17204799951286986,
+      "assertions": "2/2",
+      "metrics": {
+        "completed": 1,
+        "progress": 16.7
+      }
+    },
+    {
+      "name": "Weighted Decision Making",
+      "category": "autonomy",
+      "status": "pass",
+      "duration_ms": 0.05561600028158864,
+      "assertions": "1/1",
+      "metrics": {
+        "chosen": "PostgreSQL",
+        "options": 3
+      }
+    },
+    {
+      "name": "Execution Summary Generation",
+      "category": "autonomy",
+      "status": "pass",
+      "duration_ms": 0.0875450004969025,
+      "assertions": "1/1",
+      "metrics": {
+        "summary_length": 217
+      }
+    },
+    {
+      "name": "Student Data Analysis",
+      "category": "data_analysis",
+      "status": "pass",
+      "duration_ms": 0.13876699995307717,
+      "assertions": "2/2",
+      "metrics": {
+        "records": 5,
+        "mean_score": 88.2,
+        "patterns": 1
+      }
+    },
+    {
+      "name": "Conversation Memory",
+      "category": "memory",
+      "status": "pass",
+      "duration_ms": 1.8521960000725812,
+      "assertions": "2/2",
+      "metrics": {
+        "context_length": 156,
+        "conversations": 2
+      }
+    },
+    {
+      "name": "File Write Operation",
+      "category": "file_ops",
+      "status": "pass",
+      "duration_ms": 0.44557299952430185,
+      "assertions": "1/1",
+      "metrics": {}
+    },
+    {
+      "name": "File Read Operation",
+      "category": "file_ops",
+      "status": "pass",
+      "duration_ms": 0.5330049998519826,
+      "assertions": "1/1",
+      "metrics": {}
+    },
+    {
+      "name": "File List Operation",
+      "category": "file_ops",
+      "status": "pass",
+      "duration_ms": 0.5928270002186764,
+      "assertions": "1/1",
+      "metrics": {}
+    },
+    {
+      "name": "File Search Operation",
+      "category": "file_ops",
+      "status": "pass",
+      "duration_ms": 1.5027039999040426,
+      "assertions": "1/1",
+      "metrics": {}
+    },
+    {
+      "name": "URL Fetch",
+      "category": "web",
+      "status": "warn",
+      "duration_ms": 2021.6153300007136,
+      "assertions": "0/1",
+      "metrics": {
+        "response_size": 262
+      }
+    },
+    {
+      "name": "Voice Engine Detection",
+      "category": "voice",
+      "status": "pass",
+      "duration_ms": 0.056658999710634816,
+      "assertions": "1/1",
+      "metrics": {
+        "engines": {
+          "tts_engine": false,
+          "pyttsx3": false,
+          "gtts": false
+        }
+      }
+    },
+    {
+      "name": "Calculator Operations",
+      "category": "calculator",
+      "status": "pass",
+      "duration_ms": 0.36471999919740483,
+      "assertions": "4/4",
+      "metrics": {}
+    },
+    {
+      "name": "JSON Query Operation",
+      "category": "json",
+      "status": "pass",
+      "duration_ms": 0.1351450000584009,
+      "assertions": "1/1",
+      "metrics": {}
+    },
+    {
+      "name": "System Information",
+      "category": "system",
+      "status": "pass",
+      "duration_ms": 6.484628999714914,
+      "assertions": "1/1",
+      "metrics": {}
+    },
+    {
+      "name": "Integrated Workflow: Code Review Pipeline",
+      "category": "integrated",
+      "status": "fail",
+      "duration_ms": 3.0219319996831473,
+      "assertions": "0/5",
+      "metrics": {
+        "plan_id": "6c0d37da",
+        "code_loc": 4,
+        "security_score": 100,
+        "vulns": 0,
+        "reasoning_steps": 3,
+        "verification_confidence": 0.4
+      }
+    }
+  ],
+  "benchmarks": [
+    {
+      "name": "Reasoning Engine",
+      "avg_ms": 0.04882104999524017,
+      "min_ms": 0.028653999834205024,
+      "max_ms": 0.10507800016057445,
+      "p95_ms": 0.10507800016057445,
+      "ops_per_sec": 20482.96790211385
+    },
+    {
+      "name": "Security Scanner",
+      "avg_ms": 0.35469594986352604,
+      "min_ms": 0.18215799991594395,
+      "max_ms": 0.6196889999046107,
+      "p95_ms": 0.6196889999046107,
+      "ops_per_sec": 2819.316094206216
+    },
+    {
+      "name": "Code Analyzer",
+      "avg_ms": 0.2700512999581406,
+      "min_ms": 0.17769100031728158,
+      "max_ms": 0.6049519997759489,
+      "p95_ms": 0.6049519997759489,
+      "ops_per_sec": 3703.00013425229
+    },
+    {
+      "name": "Pattern Detector",
+      "avg_ms": 0.1730814499751432,
+      "min_ms": 0.10357100018154597,
+      "max_ms": 0.2735939997364767,
+      "p95_ms": 0.2735939997364767,
+      "ops_per_sec": 5777.626661572418
+    },
+    {
+      "name": "Prediction Engine",
+      "avg_ms": 0.0791889499851095,
+      "min_ms": 0.04381399958219845,
+      "max_ms": 0.25165399983961834,
+      "p95_ms": 0.25165399983961834,
+      "ops_per_sec": 12628.02449316524
+    },
+    {
+      "name": "Creativity Engine",
+      "avg_ms": 0.11810169999080244,
+      "min_ms": 0.04826399981538998,
+      "max_ms": 0.2390890003880486,
+      "p95_ms": 0.2390890003880486,
+      "ops_per_sec": 8467.278625776584
+    },
+    {
+      "name": "Verification Engine",
+      "avg_ms": 0.03495189989735081,
+      "min_ms": 0.029882000490033533,
+      "max_ms": 0.10384899997006869,
+      "p95_ms": 0.10384899997006869,
+      "ops_per_sec": 28610.747997587256
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+[
+  {
+    "id": "kb-python-best",
+    "topic": "Python Best Practices",
+    "category": "programming",
+    "content": "Use virtual environments, type hints, docstrings. Follow PEP 8. Use pytest for testing. Prefer f-strings. Use pathlib over os.path.",
+    "source": "open-source-patterns",
+    "confidence": 0.95,
+    "tags": [
+      "python",
+      "best-practices"
+    ],
+    "related": [],
+    "created": "2026-09-07T20:51:23.577316",
+    "updated": "2026-09-07T20:51:23.577345"
+  },
+  {
+    "id": "kb-security-owasp",
+    "topic": "OWASP Top 10",
+    "category": "security",
+    "content": "A01:Broken Access Control, A02:Cryptographic Failures, A03:Injection, A04:Insecure Design, A05:Security Misconfiguration, A06:Vulnerable Components, A07:Auth Failures, A08:Data Integrity, A09:Logging Failures, A10:SSRF",
+    "source": "owasp.org",
+    "confidence": 0.98,
+    "tags": [
+      "security",
+      "web",
+      "owasp"
+    ],
+    "related": [],
+    "created": "2026-09-07T20:51:23.577365",
+    "updated": "2026-09-07T20:51:23.577374"
+  },
+  {
+    "id": "kb-git-workflow",
+    "topic": "Git Workflow",
+    "category": "tools",
+    "content": "Use feature branches, squash commits, write clear commit messages. Use conventional commits: feat:, fix:, docs:, style:, refactor:, test:, chore:",
+    "source": "open-source-patterns",
+    "confidence": 0.95,
+    "tags": [
+      "git",
+      "workflow"
+    ],
+    "related": [],
+    "created": "2026-09-07T20:51:23.577386",
+    "updated": "2026-09-07T20:51:23.577393"
+  },
+  {
+    "id": "kb-docker",
+    "topic": "Docker Best Practices",
+    "category": "devops",
+    "content": "Use multi-stage builds, minimize layers, use .dockerignore, don't run as root, use specific base image tags, scan images for vulnerabilities.",
+    "source": "docs.docker.com",
+    "confidence": 0.92,
+    "tags": [
+      "docker",
+      "containers"
+    ],
+    "related": [],
+    "created": "2026-09-07T20:51:23.577403",
+    "updated": "2026-09-07T20:51:23.577410"
+  },
+  {
+    "id": "kb-api-design",
+    "topic": "REST API Design",
+    "category": "architecture",
+    "content": "Use nouns for resources, HTTP verbs for actions. Version APIs. Use proper status codes. Implement pagination. Use HATEOAS. Validate input. Rate limit.",
+    "source": "open-source-patterns",
+    "confidence": 0.93,
+    "tags": [
+      "api",
+      "rest",
+      "architecture"
+    ],
+    "related": [],
+    "created": "2026-09-07T20:51:23.577421",
+    "updated": "2026-09-07T20:51:23.577428"
+  },
+  {
+    "id": "kb-llm-prompts",
+    "topic": "Prompt Engineering",
+    "category": "ai",
+    "content": "Be specific and clear. Provide examples. Use system messages for role. Chain-of-thought for complex reasoning. Few-shot for consistency. Temperature for creativity control.",
+    "source": "openai-docs",
+    "confidence": 0.94,
+    "tags": [
+      "llm",
+      "prompts",
+      "ai"
+    ],
+    "related": [],
+    "created": "2026-09-07T20:51:23.577438",
+    "updated": "2026-09-07T20:51:23.577445"
+  },
+  {
+    "id": "kb-data-structs",
+    "topic": "Essential Data Structures",
+    "category": "computer-science",
+    "content": "Arrays: O(1) access. Linked Lists: O(1) insert. Hash Maps: O(1) lookup. Trees: O(log n) balanced. Graphs: BFS/DFS traversal. Heaps: O(log n) insert/extract.",
+    "source": "open-source-patterns",
+    "confidence": 0.97,
+    "tags": [
+      "algorithms",
+      "data-structures"
+    ],
+    "related": [],
+    "created": "2026-09-07T20:51:23.577455",
+    "updated": "2026-09-07T20:51:23.577462"
+  },
+  {
+    "id": "kb-microservices",
+    "topic": "Microservices Patterns",
+    "category": "architecture",
+    "content": "API Gateway, Service Discovery, Circuit Breaker, Event Sourcing, CQRS, Saga Pattern, Sidecar Pattern, Strangler Fig Pattern.",
+    "source": "open-source-patterns",
+    "confidence": 0.91,
+    "tags": [
+      "microservices",
+      "architecture"
+    ],
+    "related": [],
+    "created": "2026-09-07T20:51:23.577471",
+    "updated": "2026-09-07T20:51:23.577477"
+  },
+  {
+    "id": "kb-async-python",
+    "topic": "Async Python",
+    "category": "programming",
+    "content": "Use asyncio for I/O-bound tasks. Use aiohttp for async HTTP. Use async generators. Avoid blocking in async code. Use asyncio.gather for concurrency.",
+    "source": "docs.python.org",
+    "confidence": 0.93,
+    "tags": [
+      "python",
+      "async",
+      "concurrency"
+    ],
+    "related": [],
+    "created": "2026-09-07T20:51:23.577488",
+    "updated": "2026-09-07T20:51:23.577495"
+  },
+  {
+    "id": "kb-testing",
+    "topic": "Testing Strategies",
+    "category": "quality",
+    "content": "Test pyramid: Many unit tests, fewer integration tests, minimal E2E tests. Use mocks for external dependencies. Test edge cases. Use property-based testing for algorithms.",
+    "source": "open-source-patterns",
+    "confidence": 0.94,
+    "tags": [
+      "testing",
+      "quality"
+    ],
+    "related": [],
+    "created": "2026-09-07T20:51:23.577505",
+    "updated": "2026-09-07T20:51:23.577511"
+  },
+  {
+    "id": "kb-10-agent-architecture",
+    "topic": "Agent Architecture",
+    "category": "architecture",
+    "content": "Modern AI agents use tool-calling, memory, and autonomous reasoning loops",
+    "source": "agent-v3",
+    "confidence": 0.95,
+    "tags": [
+      "ai",
+      "agents",
+      "architecture"
+    ],
+    "related": [],
+    "created": "2026-09-07T20:51:23.578378",
+    "updated": "2026-09-07T20:51:23.578399"
+  },
+  {
+    "id": "kb-11-agent-architecture",
+    "topic": "Agent Architecture",
+    "category": "architecture",
+    "content": "Modern AI agents use tool-calling, memory, and autonomous reasoning loops",
+    "source": "agent-v3",
+    "confidence": 0.95,
+    "tags": [
+      "ai",
+      "agents",
+      "architecture"
+    ],
+    "related": [],
+    "created": "2026-09-08T16:29:49.716228",
+    "updated": "2026-09-08T16:29:49.716258"
+  },
+  {
+    "id": "kb-12-agent-architecture",
+    "topic": "Agent Architecture",
+    "category": "architecture",
+    "content": "Modern AI agents use tool-calling, memory, and autonomous reasoning loops",
+    "source": "agent-v3",
+    "confidence": 0.95,
+    "tags": [
+      "ai",
+      "agents",
+      "architecture"
+    ],
+    "related": [],
+    "created": "2026-09-08T16:56:42.804700",
+    "updated": "2026-09-08T16:56:42.804744"
+  },
+  {
+    "id": "kb-13-agent-architecture",
+    "topic": "Agent Architecture",
+    "category": "architecture",
+    "content": "Modern AI agents use tool-calling, memory, and autonomous reasoning loops",
+    "source": "agent-v3",
+    "confidence": 0.95,
+    "tags": [
+      "ai",
+      "agents",
+      "architecture"
+    ],
+    "related": [],
+    "created": "2026-09-11T14:34:27.038244",
+    "updated": "2026-09-11T14:34:27.038281"
+  },
+  {
+    "id": "kb-14-agent-architecture",
+    "topic": "Agent Architecture",
+    "category": "architecture",
+    "content": "Modern AI agents use tool-calling, memory, and autonomous reasoning loops",
+    "source": "agent-v3",
+    "confidence": 0.95,
+    "tags": [
+      "ai",
+      "agents",
+      "architecture"
+    ],
+    "related": [],
+    "created": "2026-09-11T14:51:02.451331",
+    "updated": "2026-09-11T14:51:02.451359"
+  },
+  {
+    "id": "kb-15-agent-architecture",
+    "topic": "Agent Architecture",
+    "category": "architecture",
+    "content": "Modern AI agents use tool-calling, memory, and autonomous reasoning loops",
+    "source": "agent-v3",
+    "confidence": 0.95,
+    "tags": [
+      "ai",
+      "agents",
+      "architecture"
+    ],
+    "related": [],
+    "created": "2026-09-11T15:08:32.505614",
+    "updated": "2026-09-11T15:08:32.505652"
+  }
+]
